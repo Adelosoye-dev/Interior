@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.artImg{
+  transition: all 0.3s linear;
+}
+.artImg:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
+  /* box-shadow: 2px 5px 5px 0px rgba(37, 36, 36, 0.116), -2px -2px 5px 0px rgba(255, 255, 255, 0.116); */
+
+}
+
+
+.art:hover .artImg:not(:hover){
+  transform: scale(0.95);
+}
+
+.art:hover .artImg:is(:hover) + .artImg{
+  transform: scale(0.95)
+}
+
+
+.artText{
+  bottom: -70%;
+}
+
