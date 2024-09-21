@@ -19,7 +19,7 @@ const Project = () => {
       <div className="relative art w-full min-h-[50vh] md:min-h-[100vh] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
         <div className="row-span-3 artImg relative w-full h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden group">
           <Image
-            src="/image1.jpg"
+            src="/image00.jpeg"
             alt="First image"
             layout="fill"
             objectFit="cover"
@@ -57,7 +57,7 @@ const Project = () => {
 
         <div className="relative artImg w-full h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden row-span-3 group">
           <Image
-            src="/image4.jpeg"
+            src="/image6.jpg"
             alt="Third image"
             layout="fill"
             objectFit="cover"
@@ -76,7 +76,7 @@ const Project = () => {
 
         <div className="relative artImg w-full h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden row-span-5 group">
           <Image
-            src="/image4.jpeg"
+            src="/image3.jpeg"
             alt="Fourth image"
             layout="fill"
             objectFit="cover"
@@ -95,7 +95,7 @@ const Project = () => {
 
         <div className="row-span-5 artImg relative w-full h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden group">
           <Image
-            src="/image4.jpeg"
+            src="/image5.jpg"
             alt="Fifth image"
             layout="fill"
             objectFit="cover"
@@ -114,7 +114,7 @@ const Project = () => {
 
         <div className="relative w-full artImg h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden row-span-3 group">
           <Image
-            src="/image4.jpeg"
+            src="/hero.jpg"
             alt="Sixth image"
             layout="fill"
             objectFit="cover"

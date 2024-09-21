@@ -86,7 +86,7 @@ const Category = () => {
         {/* Fourth Image Container */}
         <div className="relative h-[300px] md:h-[500px] w-full md:w-[400px] overflow-hidden rounded-lg">
           <Image
-            src="/image2.jpg"
+            src="/image07.jpeg"
             alt="Bohemian Style"
             layout="fill"
             objectFit="cover"

@@ -5,15 +5,21 @@ import Hero from "./components/hero";
 import NavBar from "./components/navBar";
 import Project from "./components/project";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Testimonial from "./components/testimonial";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 export default function Home() {
   return (
     <ParallaxProvider>
-    <div className="bg-[#f8f8f8] overflow-x-hidden">
+    <div className="bg-gray-200 overflow-x-hidden">
       <NavBar />
       <Hero />
       <About />
       <Category />
       <Project/>
+      <Testimonial/>
+      <Contact/>
+      <Footer/>
     </div>
     </ParallaxProvider>
   );
