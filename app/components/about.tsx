@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Modal from "./modal";
+import { useState } from "react";
 
 const About = () => {
   // Use Intersection Observer to trigger animations on scroll
@@ -8,7 +10,15 @@ const About = () => {
     triggerOnce: true,
     threshold: 0.2, // Trigger animation when 20% of the section is visible
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="relative">
       <div className="relative p-5 md:p-5 flex m-5 md:m-5 w-full flex-wrap md:gap-20 gap-10">
@@ -37,8 +47,9 @@ const About = () => {
           <motion.button
             className="mt-5 md:mt-10 py-2 px-6 rounded-[20px] bg-[#3d3531] text-white font-medium"
             whileHover={{ scale: 1.1 }}
+            onClick={handleOpenModal} // Open modal on click
           >
-            Read More
+            Visit Our Shop
           </motion.button>
         </motion.div>
 
@@ -146,6 +157,7 @@ const About = () => {
             </motion.div>
           </motion.div>
         </div>
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>
     </div>
   );

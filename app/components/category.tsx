@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Category = () => {
   return (
-    <div className="p-5 m-5 gap-2">
+    <div className="md:p-5 md:m-5 gap-2">
       {/* Title Section */}
-      <div className="text-center p-5 m-5">
+      <div className="text-center p-5 my-5">
         <h3 className="font-bold text-[18px]">CATEGORY</h3>
         <h2 className="font-bold text-[28px] md:text-[40px] text-[#3d3531] font-serif py-5 md:py-10">
           Discover Your Signature Style
@@ -19,28 +19,28 @@ const Category = () => {
       </div>
 
       {/* First Row of Images */}
-      <div className="flex flex-col md:flex-row justify-between items-center p-5 m-5 space-y-5 md:space-y-0 md:space-x-5">
-        {/* First Image Container */}
-        <div className="relative h-[300px] md:h-[500px] w-full md:w-[400px] overflow-hidden rounded-lg">
+      <div className="flex flex-col w-full md:flex-row justify-between items-center mt-5 space-y-5 md:space-y-0 md:space-x-5 p-5">
+        {/* Minimalist Style */}
+        <div className="relative h-[300px] md:h-[500px] w-full md:w-[450px] overflow-hidden rounded-lg">
           <Image
             src="/image8.jpg"
             alt="Minimalist Style"
             layout="fill"
             objectFit="cover"
-            className="transition-all duration-300 ease-in-out transform hover:scale-125"
+            className="transition-all w-full duration-300 ease-in-out transform hover:scale-125"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gray-900 bg-opacity-50 p-5">
             <h2 className="font-bold text-[20px] md:text-[30px] text-white mb-2">
               Minimalist Style
             </h2>
             <p className="text-gray-300 text-[12px] md:text-[14px]">
-              Experience the beauty of Minimalism, Clean Lines, Natural Tones,
-              and Functional Designs. Bringing Calm and Clarity to Your Space.
+              Serenity in simplicity. Discover clean lines and uncluttered
+              spaces that bring a sense of calm to your home.
             </p>
           </div>
         </div>
 
-        {/* Second Image Container */}
+        {/* Scandinavian Style */}
         <div className="relative h-[300px] md:h-[500px] w-full md:w-[750px] overflow-hidden rounded-xl">
           <Image
             src="/image9.jpg"
@@ -54,16 +54,16 @@ const Category = () => {
               Scandinavian Style
             </h2>
             <p className="text-gray-300 text-[12px] md:text-[14px]">
-              Embrace functionality, simplicity, and understated elegance with 
-              Scandinavian design.
+              Warm, natural, and minimalist. Embrace Scandinavian design that
+              balances functionality with beauty.
             </p>
           </div>
         </div>
       </div>
 
       {/* Second Row of Images */}
-      <div className="flex flex-col md:flex-row justify-between items-center p-5 m-5 space-y-5 md:space-y-0 md:space-x-5">
-        {/* Third Image Container */}
+      <div className="flex flex-col md:flex-row w-full justify-between items-center p-5 space-y-5 md:space-y-0 md:space-x-5">
+        {/* Modern Style */}
         <div className="relative h-[300px] md:h-[500px] w-full md:w-[750px] overflow-hidden rounded-xl">
           <Image
             src="/hero1.jpg"
@@ -77,14 +77,14 @@ const Category = () => {
               Modern Style
             </h2>
             <p className="text-gray-300 text-[12px] md:text-[14px]">
-              Bold, sleek, and contemporary designs, where form meets function
-              to create stunning living spaces.
+              Sleek and stylish with clean forms. Modern design merges
+              functionality with artistic flair.
             </p>
           </div>
         </div>
 
-        {/* Fourth Image Container */}
-        <div className="relative h-[300px] md:h-[500px] w-full md:w-[400px] overflow-hidden rounded-lg">
+        {/* Bohemian Style */}
+        <div className="relative h-[300px] w-full md:h-[500px] md:w-[400px] overflow-hidden rounded-lg">
           <Image
             src="/image07.jpeg"
             alt="Bohemian Style"
@@ -97,8 +97,8 @@ const Category = () => {
               Bohemian Style
             </h2>
             <p className="text-gray-300 text-[12px] md:text-[14px]">
-              Free-spirited, artistic, and unconventional. Discover your inner
-              bohemian with this eclectic mix of textures and patterns.
+              Artistic and eclectic. Celebrate your creativity with bold colors,
+              patterns, and a free-spirited vibe.
             </p>
           </div>
         </div>
