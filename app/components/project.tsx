@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Modal from "./modal";
+import { motion } from "framer-motion";
+
 
 const Project = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="p-5 md:p-10 my-4 md:my-10 relative overflow-hidden">
       <h3 className="font-semibold text-center md:text-left">OUR PROJECTS</h3>
@@ -102,7 +114,7 @@ const Project = () => {
         {/* Project 5 */}
         <div className="row-span-5 artImg relative w-full h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden group">
           <Image
-            src="/image5.jpg"
+            src="/image5.JPG"
             alt="Industrial Chic"
             layout="fill"
             objectFit="cover"
@@ -122,7 +134,7 @@ const Project = () => {
         {/* Project 6 */}
         <div className="relative w-full artImg h-64 md:h-full rounded-[20px] border-2 border-transparent overflow-hidden row-span-3 group">
           <Image
-            src="/hero.jpg"
+            src="/hero.JPG"
             alt="Urban Loft"
             layout="fill"
             objectFit="cover"
@@ -140,11 +152,16 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="flex lg:gap-2">
-        <button className="my-6 md:my-10 mx-auto block py-2 px-6 rounded-[20px] bg-[#3d3531] text-white font-medium hover:bg-[#5a514b] transition-colors duration-300">
-          More Projects
-        </button>
+      <div className="flex lg:gap-2 justify-center">
+      <motion.button
+            className="mt-5 md:mt-10 py-2 px-6 rounded-[20px] bg-[#3d3531] text-white font-medium mx-auto"
+            whileHover={{ scale: 1.1 }}
+            onClick={handleOpenModal} // Open modal on click
+          >
+            More Projects
+          </motion.button>
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 };

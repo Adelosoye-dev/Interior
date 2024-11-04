@@ -143,7 +143,7 @@ const About = () => {
               className="relative w-full h-full rounded-[20px] border-2 border-transparent overflow-hidden"
             >
               <Image
-                src="/image2.jpg"
+                src="/image2.JPG"
                 alt="Third image"
                 layout="fill"
                 objectFit="cover"
